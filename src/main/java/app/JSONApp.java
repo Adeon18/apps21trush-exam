@@ -20,6 +20,7 @@ public class JSONApp {
         JsonPair year = new JsonPair("year", jYear);
         JsonObject jsonObj = new JsonObject(name, surname, year);
         jsonObj.add(marks);
+        jsonObj.contains("year");
         print(jsonObj); // {'name': 'Andrii', 'surname': 'Rodionov', 'year': 2, 'marks': [3, 4]}
 
         print(jsonObj.projection("surname", "age", "year", "marks")); // {'surname': 'Rodionov', 'year': 2, 'marks': [3, 4]}

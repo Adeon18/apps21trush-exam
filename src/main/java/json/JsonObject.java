@@ -32,6 +32,10 @@ public class JsonObject extends Json {
         objectData.put(jsonPair.key, jsonPair.value);
     }
 
+    public boolean contains(String name) {
+        return objectData.containsKey(name);
+    }
+
     public Json find(String name) {
         return objectData.get(name);
     }
